@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int mam[3];
+    int point=0;
+cout<<'hello in this game'<<endl;
+cout<<"what the missing number in this sequence:1|2|4|8|??"<<endl;
+cout<<"enter the missing number 1 :"<<endl;
+cin>>mam[0];
+cout<<"what the missing number in this sequence:5|10|15|20|??"<<endl;
+cout<<"enter the missing number 2 :"<<endl;
+cin>>mam[1];
+cout<<"what the missing number in this sequence:3|6|9|12|??"<<endl;
+cout<<"enter the missing number 3 :"<<endl;
+cin>>mam[2];
+
+int num[3][5] = {
+    {1, 2, 4, 8, 16},
+    {5, 10, 15, 20, 25},
+    {3, 6, 9, 12, 15}
+}; // your can change the array 
+switch (mam[0])
+{
+    case 16:
+        point++;
+        break;
+}
+switch (mam[1])
+{
+    case 25:
+        point++;
+        break;
+}
+switch (mam[2])
+{
+    case 15:
+        point++;
+        break;
+}
+cout<<"your score is :"<<point<<endl;
+}
